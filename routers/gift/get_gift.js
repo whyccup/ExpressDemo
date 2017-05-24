@@ -11,14 +11,16 @@ module.exports = function (router) {
                 gift: {
                     name: 'MAC高光',
                     price: '360元',
-                    buyUrl: 'https://www.maccosmetics.com.cn/account/signin.tmpl'
+                    buyUrl: 'https://www.maccosmetics.com.cn/account/signin.tmpl',
+                    preview: '这里是图片',
+                    message: '这里是备注信息'
                 }
             }
         });
 
         res.json({
             status: 201,
-            message: '服务器不接受这样的参数'
+            message: '服务器不接受这样的请求'
         })
     })
 };
