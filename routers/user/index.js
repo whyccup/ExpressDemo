@@ -11,7 +11,7 @@ const router = express.Router();
 require('./account_login')(router);
 // 用户注册
 require('./account_register')(router);
-// 测试
+// 测试(测试代码)
 require('./post_list')(router);
 
 // 导出对象用module.exports
