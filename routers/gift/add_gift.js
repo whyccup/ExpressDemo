@@ -11,7 +11,7 @@ module.exports = function (router) {
         var buyUrl = req.body.buyUrl;
         var preview = req.body.preview;
         var message = req.body.message;
-        if (token == 'whyccup') {
+        if (token === 'whyccup') {
             addGift.create({
                 name: name,
                 price: price,
@@ -22,16 +22,12 @@ module.exports = function (router) {
                 //err参数使用
                 if(err) console.error(err);
                 //回调文档
-                console.log(doc);
+                // console.log(doc);
             });
             res.json({
                 status: 200,
-                data: {
-                    gift: {
-                        message: '礼物添加成功',
-                        isOk: '1'
-                    }
-                }
+                message: '礼物添加成功',
+                isOk: '1'
             })
         } else {
             res.json({
