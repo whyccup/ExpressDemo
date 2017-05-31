@@ -1,5 +1,5 @@
 # ExpressDemo
-study node.js + Express + body-parser + Mongodb + Mongoose
+study node.js + Express + body-parser + cors + Mongodb + Mongoose
 
 # Node Web应用程序
 > MEVN
