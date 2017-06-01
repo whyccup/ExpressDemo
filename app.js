@@ -18,10 +18,10 @@ app.use(cors());
 const bodyParser = require('body-parser');
 // 使用参数解析器----目的：解析请求头（只用一个）
 // 解析application/x-www-form-urlencoded
-// app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 // 解析application/json
 // app.use(bodyParser.json());
-app.use(bodyParser.json({limit: '10000kb'}));
+// app.use(bodyParser.json({limit: '10000kb'}));
 
 //express下node服务搭建
 //app.use使用中间件
@@ -32,6 +32,8 @@ app.use(bodyParser.json({limit: '10000kb'}));
 app.use(require('./routers/user'));
 // 礼物相关
 app.use(require('./routers/gift'));
+// 抽奖相关
+app.use(require('./routers/luck'));
 
 
 //监听的端口
